@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <title>Tugas WEBGIS Braga</title>
+        <link href="css/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/ext/customScroll/css/jquery.mCustomScrollbar.css" rel="stylesheet">
+        <link href="css/css/style.default.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+        <style>
+            #map {height: 530px;}
+        </style>
+    </head>
+    
+    <body>
+        <!--Head Navigation-->
+        <nav class="navbar navbar-default nav-fixed-top" role="navigation" id="app-nav-bar" >
+            <!--From Left to Right-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index_webgis.html">Tugas Webgis Braga</a>
+            </div>
+
+            <!--Link to other data-->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="penjelasan.html" active>Penjelasan</a>
+                    </li>
+                    <li class = "active">
+                        <a href="proses.html">Proses</a>
+                    </li>
+                    <li>
+                        <a href="http://localhost:3000/map">Tampilan Peta</a>
+                    </li>
+                    <li>
+                        <a href="selesai.html">
+                            Selesai
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <H1 id="section-title">
+            <h1 class = "center">DATA APA SAJA YANG DIBUTUHKAN?</h1>
+        </H1>
+        <ul>
+            <li id="paragraph">
+                Data POI ATM BCA di Kota Surakarta.
+            </li>
+            <li id="paragraph">
+                Data Jalan di Kota Surakarta.
+            </li>
+            <li id="paragraph">
+                Software Quantum GIS
+            </li>
+        </ul>
+        <H2 id="section-title">
+            PROSES
+        </H2>
+        <ul>
+            <li id="paragraph">
+                Menginstall Plug-in ORS Tools di software Quantum GIS
+            </li>
+            <li id="paragraph">
+                Memilih menu isochrone dengan luas cakupan sejauh 500m berdasarkan jalan.
+            </li>
+            <li id="paragraph">
+                Isochrone akan menampilkan tampilan poligon setiap titik yang dimasukan berdasarkan data jalan yang dijadikan parameter, semakin detil data jalan yang dimasukan akan semakin detil hasil cakupan daya layannya.
+            </li>
+        </ul>
+    </body>
+</html>
