@@ -14,6 +14,9 @@ fastify.register(require('point-of-view'), {
     ejs: require('ejs')
   }
 });
+fastify.register(require('fastify-postgres'), {
+  connectionString: process.nextTick.PGSTRING
+})
 
 //Register Custom routes
 fastify.register(require("./routes/ssr"));
